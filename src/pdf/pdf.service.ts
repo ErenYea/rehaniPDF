@@ -26,7 +26,7 @@ export class PdfService {
     return fileUrl;
   }
 
-  async getNames(url: string, cond: boolean = false): Promise<any> {
+  async getNames(url: string, cond = false): Promise<any> {
     const response = await fetch(url);
     const pdfBuffer = await response.arrayBuffer();
     const pdfDoc = await PDFDocument.load(pdfBuffer);

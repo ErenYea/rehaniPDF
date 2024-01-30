@@ -54,5 +54,4 @@ export class TodoitemsController {
   }
 
   // INSERT DELETE CODE HERE
-
 }
